@@ -28,6 +28,24 @@ namespace DesignProductivityDLL
         FindDesignDepartmentProductivityByDateRangeDataSet aFindDesignDepartmentProductivityByDateRangeDataSet;
         FindDesignDepartmentProductivityByDateRangeDataSetTableAdapters.FindDesignDepartmentProductivityByDateRangeTableAdapter aFindDesignDepartmentProductivityByDateRangeTableAdapter;
 
+        FindDesignTotalEmployeeProductivityHoursDataSet aFindDesignTotalEmployeeProductivityHoursDataSet;
+        FindDesignTotalEmployeeProductivityHoursDataSetTableAdapters.FindDesignTotalEmployeeProductivityHoursTableAdapter aFindDesignTotalEmployeeProductivityHoursTableAdapter;
+
+        public FindDesignTotalEmployeeProductivityHoursDataSet FindDesignTotalEmployeeProductivityHours(int intEmployeeID, DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindDesignTotalEmployeeProductivityHoursDataSet = new FindDesignTotalEmployeeProductivityHoursDataSet();
+                aFindDesignTotalEmployeeProductivityHoursTableAdapter = new FindDesignTotalEmployeeProductivityHoursDataSetTableAdapters.FindDesignTotalEmployeeProductivityHoursTableAdapter();
+                aFindDesignTotalEmployeeProductivityHoursTableAdapter.Fill(aFindDesignTotalEmployeeProductivityHoursDataSet.FindDesignTotalEmployeeProductivityHours, intEmployeeID, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Design Productivity Class // Find Design Total Employee Productivity Hours " + Ex.Message);
+            }
+
+            return aFindDesignTotalEmployeeProductivityHoursDataSet;
+        }
         public FindDesignDepartmentProductivityByDateRangeDataSet FindDesignDepartmentProductivityByDateRange(DateTime datStartDate, DateTime datEndDate)
         {
             try

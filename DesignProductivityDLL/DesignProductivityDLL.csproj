@@ -60,6 +60,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindDesignEmployeeProductivityByDateRangeDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindDesignTotalEmployeeProductivityHoursDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignTotalEmployeeProductivityHoursDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InsertDesignProductivityEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -106,6 +111,17 @@
     </None>
     <None Include="FindDesignEmployeeProductivityByDateRangeDataSet.xss">
       <DependentUpon>FindDesignEmployeeProductivityByDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignTotalEmployeeProductivityHoursDataSet.xsc">
+      <DependentUpon>FindDesignTotalEmployeeProductivityHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignTotalEmployeeProductivityHoursDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignTotalEmployeeProductivityHoursDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignTotalEmployeeProductivityHoursDataSet.xss">
+      <DependentUpon>FindDesignTotalEmployeeProductivityHoursDataSet.xsd</DependentUpon>
     </None>
     <None Include="InsertDesignProductivityEntry.xsc">
       <DependentUpon>InsertDesignProductivityEntry.xsd</DependentUpon>
