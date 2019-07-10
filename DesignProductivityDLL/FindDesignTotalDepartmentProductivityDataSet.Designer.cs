@@ -20,17 +20,17 @@ namespace DesignProductivityDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("FindDesignDepartmentProductivityByDateRangeDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("FindDesignTotalDepartmentProductivityDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class FindDesignDepartmentProductivityByDateRangeDataSet : global::System.Data.DataSet {
+    public partial class FindDesignTotalDepartmentProductivityDataSet : global::System.Data.DataSet {
         
-        private FindDesignDepartmentProductivityByDateRangeDataTable tableFindDesignDepartmentProductivityByDateRange;
+        private FindDesignTotalDepartmentProductivityDataTable tableFindDesignTotalDepartmentProductivity;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public FindDesignDepartmentProductivityByDateRangeDataSet() {
+        public FindDesignTotalDepartmentProductivityDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace DesignProductivityDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected FindDesignDepartmentProductivityByDateRangeDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected FindDesignTotalDepartmentProductivityDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace DesignProductivityDLL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["FindDesignDepartmentProductivityByDateRange"] != null)) {
-                    base.Tables.Add(new FindDesignDepartmentProductivityByDateRangeDataTable(ds.Tables["FindDesignDepartmentProductivityByDateRange"]));
+                if ((ds.Tables["FindDesignTotalDepartmentProductivity"] != null)) {
+                    base.Tables.Add(new FindDesignTotalDepartmentProductivityDataTable(ds.Tables["FindDesignTotalDepartmentProductivity"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace DesignProductivityDLL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public FindDesignDepartmentProductivityByDateRangeDataTable FindDesignDepartmentProductivityByDateRange {
+        public FindDesignTotalDepartmentProductivityDataTable FindDesignTotalDepartmentProductivity {
             get {
-                return this.tableFindDesignDepartmentProductivityByDateRange;
+                return this.tableFindDesignTotalDepartmentProductivity;
             }
         }
         
@@ -127,7 +127,7 @@ namespace DesignProductivityDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            FindDesignDepartmentProductivityByDateRangeDataSet cln = ((FindDesignDepartmentProductivityByDateRangeDataSet)(base.Clone()));
+            FindDesignTotalDepartmentProductivityDataSet cln = ((FindDesignTotalDepartmentProductivityDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace DesignProductivityDLL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["FindDesignDepartmentProductivityByDateRange"] != null)) {
-                    base.Tables.Add(new FindDesignDepartmentProductivityByDateRangeDataTable(ds.Tables["FindDesignDepartmentProductivityByDateRange"]));
+                if ((ds.Tables["FindDesignTotalDepartmentProductivity"] != null)) {
+                    base.Tables.Add(new FindDesignTotalDepartmentProductivityDataTable(ds.Tables["FindDesignTotalDepartmentProductivity"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace DesignProductivityDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableFindDesignDepartmentProductivityByDateRange = ((FindDesignDepartmentProductivityByDateRangeDataTable)(base.Tables["FindDesignDepartmentProductivityByDateRange"]));
+            this.tableFindDesignTotalDepartmentProductivity = ((FindDesignTotalDepartmentProductivityDataTable)(base.Tables["FindDesignTotalDepartmentProductivity"]));
             if ((initTable == true)) {
-                if ((this.tableFindDesignDepartmentProductivityByDateRange != null)) {
-                    this.tableFindDesignDepartmentProductivityByDateRange.InitVars();
+                if ((this.tableFindDesignTotalDepartmentProductivity != null)) {
+                    this.tableFindDesignTotalDepartmentProductivity.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace DesignProductivityDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "FindDesignDepartmentProductivityByDateRangeDataSet";
+            this.DataSetName = "FindDesignTotalDepartmentProductivityDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/FindDesignDepartmentProductivityByDateRangeDataSet.xsd";
+            this.Namespace = "http://tempuri.org/FindDesignTotalDepartmentProductivityDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableFindDesignDepartmentProductivityByDateRange = new FindDesignDepartmentProductivityByDateRangeDataTable();
-            base.Tables.Add(this.tableFindDesignDepartmentProductivityByDateRange);
+            this.tableFindDesignTotalDepartmentProductivity = new FindDesignTotalDepartmentProductivityDataTable();
+            base.Tables.Add(this.tableFindDesignTotalDepartmentProductivity);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeFindDesignDepartmentProductivityByDateRange() {
+        private bool ShouldSerializeFindDesignTotalDepartmentProductivity() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace DesignProductivityDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            FindDesignDepartmentProductivityByDateRangeDataSet ds = new FindDesignDepartmentProductivityByDateRangeDataSet();
+            FindDesignTotalDepartmentProductivityDataSet ds = new FindDesignTotalDepartmentProductivityDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,41 +270,27 @@ namespace DesignProductivityDLL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void FindDesignDepartmentProductivityByDateRangeRowChangeEventHandler(object sender, FindDesignDepartmentProductivityByDateRangeRowChangeEvent e);
+        public delegate void FindDesignTotalDepartmentProductivityRowChangeEventHandler(object sender, FindDesignTotalDepartmentProductivityRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class FindDesignDepartmentProductivityByDateRangeDataTable : global::System.Data.TypedTableBase<FindDesignDepartmentProductivityByDateRangeRow> {
+        public partial class FindDesignTotalDepartmentProductivityDataTable : global::System.Data.TypedTableBase<FindDesignTotalDepartmentProductivityRow> {
             
-            private global::System.Data.DataColumn columnTransactionDate;
+            private global::System.Data.DataColumn columnEmployeeID;
             
-            private global::System.Data.DataColumn columnfirstname;
+            private global::System.Data.DataColumn columnFirstName;
             
             private global::System.Data.DataColumn columnLastName;
-            
-            private global::System.Data.DataColumn columnHomeOffice;
-            
-            private global::System.Data.DataColumn columnAssignedProjectID;
-            
-            private global::System.Data.DataColumn columnProjectName;
-            
-            private global::System.Data.DataColumn columnOfficeID;
-            
-            private global::System.Data.DataColumn columnState;
-            
-            private global::System.Data.DataColumn columnTaskID;
-            
-            private global::System.Data.DataColumn columnWorkTask;
             
             private global::System.Data.DataColumn columnTotalHours;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignDepartmentProductivityByDateRangeDataTable() {
-                this.TableName = "FindDesignDepartmentProductivityByDateRange";
+            public FindDesignTotalDepartmentProductivityDataTable() {
+                this.TableName = "FindDesignTotalDepartmentProductivity";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -312,7 +298,7 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal FindDesignDepartmentProductivityByDateRangeDataTable(global::System.Data.DataTable table) {
+            internal FindDesignTotalDepartmentProductivityDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -329,24 +315,24 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected FindDesignDepartmentProductivityByDateRangeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected FindDesignTotalDepartmentProductivityDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TransactionDateColumn {
+            public global::System.Data.DataColumn EmployeeIDColumn {
                 get {
-                    return this.columnTransactionDate;
+                    return this.columnEmployeeID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn firstnameColumn {
+            public global::System.Data.DataColumn FirstNameColumn {
                 get {
-                    return this.columnfirstname;
+                    return this.columnFirstName;
                 }
             }
             
@@ -355,62 +341,6 @@ namespace DesignProductivityDLL {
             public global::System.Data.DataColumn LastNameColumn {
                 get {
                     return this.columnLastName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn HomeOfficeColumn {
-                get {
-                    return this.columnHomeOffice;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn AssignedProjectIDColumn {
-                get {
-                    return this.columnAssignedProjectID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ProjectNameColumn {
-                get {
-                    return this.columnProjectName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn OfficeIDColumn {
-                get {
-                    return this.columnOfficeID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn StateColumn {
-                get {
-                    return this.columnState;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TaskIDColumn {
-                get {
-                    return this.columnTaskID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn WorkTaskColumn {
-                get {
-                    return this.columnWorkTask;
                 }
             }
             
@@ -433,55 +363,48 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignDepartmentProductivityByDateRangeRow this[int index] {
+            public FindDesignTotalDepartmentProductivityRow this[int index] {
                 get {
-                    return ((FindDesignDepartmentProductivityByDateRangeRow)(this.Rows[index]));
+                    return ((FindDesignTotalDepartmentProductivityRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindDesignDepartmentProductivityByDateRangeRowChangeEventHandler FindDesignDepartmentProductivityByDateRangeRowChanging;
+            public event FindDesignTotalDepartmentProductivityRowChangeEventHandler FindDesignTotalDepartmentProductivityRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindDesignDepartmentProductivityByDateRangeRowChangeEventHandler FindDesignDepartmentProductivityByDateRangeRowChanged;
+            public event FindDesignTotalDepartmentProductivityRowChangeEventHandler FindDesignTotalDepartmentProductivityRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindDesignDepartmentProductivityByDateRangeRowChangeEventHandler FindDesignDepartmentProductivityByDateRangeRowDeleting;
+            public event FindDesignTotalDepartmentProductivityRowChangeEventHandler FindDesignTotalDepartmentProductivityRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindDesignDepartmentProductivityByDateRangeRowChangeEventHandler FindDesignDepartmentProductivityByDateRangeRowDeleted;
+            public event FindDesignTotalDepartmentProductivityRowChangeEventHandler FindDesignTotalDepartmentProductivityRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddFindDesignDepartmentProductivityByDateRangeRow(FindDesignDepartmentProductivityByDateRangeRow row) {
+            public void AddFindDesignTotalDepartmentProductivityRow(FindDesignTotalDepartmentProductivityRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignDepartmentProductivityByDateRangeRow AddFindDesignDepartmentProductivityByDateRangeRow(System.DateTime TransactionDate, string firstname, string LastName, string HomeOffice, string AssignedProjectID, string ProjectName, int OfficeID, string State, int TaskID, string WorkTask, decimal TotalHours) {
-                FindDesignDepartmentProductivityByDateRangeRow rowFindDesignDepartmentProductivityByDateRangeRow = ((FindDesignDepartmentProductivityByDateRangeRow)(this.NewRow()));
+            public FindDesignTotalDepartmentProductivityRow AddFindDesignTotalDepartmentProductivityRow(int EmployeeID, string FirstName, string LastName, decimal TotalHours) {
+                FindDesignTotalDepartmentProductivityRow rowFindDesignTotalDepartmentProductivityRow = ((FindDesignTotalDepartmentProductivityRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        TransactionDate,
-                        firstname,
+                        EmployeeID,
+                        FirstName,
                         LastName,
-                        HomeOffice,
-                        AssignedProjectID,
-                        ProjectName,
-                        OfficeID,
-                        State,
-                        TaskID,
-                        WorkTask,
                         TotalHours};
-                rowFindDesignDepartmentProductivityByDateRangeRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowFindDesignDepartmentProductivityByDateRangeRow);
-                return rowFindDesignDepartmentProductivityByDateRangeRow;
+                rowFindDesignTotalDepartmentProductivityRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFindDesignTotalDepartmentProductivityRow);
+                return rowFindDesignTotalDepartmentProductivityRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                FindDesignDepartmentProductivityByDateRangeDataTable cln = ((FindDesignDepartmentProductivityByDateRangeDataTable)(base.Clone()));
+                FindDesignTotalDepartmentProductivityDataTable cln = ((FindDesignTotalDepartmentProductivityDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -489,93 +412,61 @@ namespace DesignProductivityDLL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new FindDesignDepartmentProductivityByDateRangeDataTable();
+                return new FindDesignTotalDepartmentProductivityDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnTransactionDate = base.Columns["TransactionDate"];
-                this.columnfirstname = base.Columns["firstname"];
+                this.columnEmployeeID = base.Columns["EmployeeID"];
+                this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
-                this.columnHomeOffice = base.Columns["HomeOffice"];
-                this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
-                this.columnProjectName = base.Columns["ProjectName"];
-                this.columnOfficeID = base.Columns["OfficeID"];
-                this.columnState = base.Columns["State"];
-                this.columnTaskID = base.Columns["TaskID"];
-                this.columnWorkTask = base.Columns["WorkTask"];
                 this.columnTotalHours = base.Columns["TotalHours"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionDate);
-                this.columnfirstname = new global::System.Data.DataColumn("firstname", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfirstname);
+                this.columnEmployeeID = new global::System.Data.DataColumn("EmployeeID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmployeeID);
+                this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFirstName);
                 this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLastName);
-                this.columnHomeOffice = new global::System.Data.DataColumn("HomeOffice", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnHomeOffice);
-                this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAssignedProjectID);
-                this.columnProjectName = new global::System.Data.DataColumn("ProjectName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProjectName);
-                this.columnOfficeID = new global::System.Data.DataColumn("OfficeID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOfficeID);
-                this.columnState = new global::System.Data.DataColumn("State", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnState);
-                this.columnTaskID = new global::System.Data.DataColumn("TaskID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTaskID);
-                this.columnWorkTask = new global::System.Data.DataColumn("WorkTask", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnWorkTask);
                 this.columnTotalHours = new global::System.Data.DataColumn("TotalHours", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotalHours);
-                this.columnTransactionDate.AllowDBNull = false;
-                this.columnfirstname.AllowDBNull = false;
-                this.columnfirstname.MaxLength = 2147483647;
+                this.columnEmployeeID.AllowDBNull = false;
+                this.columnFirstName.AllowDBNull = false;
+                this.columnFirstName.MaxLength = 2147483647;
                 this.columnLastName.AllowDBNull = false;
                 this.columnLastName.MaxLength = 2147483647;
-                this.columnHomeOffice.AllowDBNull = false;
-                this.columnHomeOffice.MaxLength = 2147483647;
-                this.columnAssignedProjectID.AllowDBNull = false;
-                this.columnAssignedProjectID.MaxLength = 2147483647;
-                this.columnProjectName.AllowDBNull = false;
-                this.columnProjectName.MaxLength = 2147483647;
-                this.columnOfficeID.AllowDBNull = false;
-                this.columnState.MaxLength = 2147483647;
-                this.columnTaskID.AllowDBNull = false;
-                this.columnWorkTask.AllowDBNull = false;
-                this.columnWorkTask.MaxLength = 2147483647;
-                this.columnTotalHours.AllowDBNull = false;
+                this.columnTotalHours.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignDepartmentProductivityByDateRangeRow NewFindDesignDepartmentProductivityByDateRangeRow() {
-                return ((FindDesignDepartmentProductivityByDateRangeRow)(this.NewRow()));
+            public FindDesignTotalDepartmentProductivityRow NewFindDesignTotalDepartmentProductivityRow() {
+                return ((FindDesignTotalDepartmentProductivityRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new FindDesignDepartmentProductivityByDateRangeRow(builder);
+                return new FindDesignTotalDepartmentProductivityRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(FindDesignDepartmentProductivityByDateRangeRow);
+                return typeof(FindDesignTotalDepartmentProductivityRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.FindDesignDepartmentProductivityByDateRangeRowChanged != null)) {
-                    this.FindDesignDepartmentProductivityByDateRangeRowChanged(this, new FindDesignDepartmentProductivityByDateRangeRowChangeEvent(((FindDesignDepartmentProductivityByDateRangeRow)(e.Row)), e.Action));
+                if ((this.FindDesignTotalDepartmentProductivityRowChanged != null)) {
+                    this.FindDesignTotalDepartmentProductivityRowChanged(this, new FindDesignTotalDepartmentProductivityRowChangeEvent(((FindDesignTotalDepartmentProductivityRow)(e.Row)), e.Action));
                 }
             }
             
@@ -583,8 +474,8 @@ namespace DesignProductivityDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.FindDesignDepartmentProductivityByDateRangeRowChanging != null)) {
-                    this.FindDesignDepartmentProductivityByDateRangeRowChanging(this, new FindDesignDepartmentProductivityByDateRangeRowChangeEvent(((FindDesignDepartmentProductivityByDateRangeRow)(e.Row)), e.Action));
+                if ((this.FindDesignTotalDepartmentProductivityRowChanging != null)) {
+                    this.FindDesignTotalDepartmentProductivityRowChanging(this, new FindDesignTotalDepartmentProductivityRowChangeEvent(((FindDesignTotalDepartmentProductivityRow)(e.Row)), e.Action));
                 }
             }
             
@@ -592,8 +483,8 @@ namespace DesignProductivityDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.FindDesignDepartmentProductivityByDateRangeRowDeleted != null)) {
-                    this.FindDesignDepartmentProductivityByDateRangeRowDeleted(this, new FindDesignDepartmentProductivityByDateRangeRowChangeEvent(((FindDesignDepartmentProductivityByDateRangeRow)(e.Row)), e.Action));
+                if ((this.FindDesignTotalDepartmentProductivityRowDeleted != null)) {
+                    this.FindDesignTotalDepartmentProductivityRowDeleted(this, new FindDesignTotalDepartmentProductivityRowChangeEvent(((FindDesignTotalDepartmentProductivityRow)(e.Row)), e.Action));
                 }
             }
             
@@ -601,14 +492,14 @@ namespace DesignProductivityDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.FindDesignDepartmentProductivityByDateRangeRowDeleting != null)) {
-                    this.FindDesignDepartmentProductivityByDateRangeRowDeleting(this, new FindDesignDepartmentProductivityByDateRangeRowChangeEvent(((FindDesignDepartmentProductivityByDateRangeRow)(e.Row)), e.Action));
+                if ((this.FindDesignTotalDepartmentProductivityRowDeleting != null)) {
+                    this.FindDesignTotalDepartmentProductivityRowDeleting(this, new FindDesignTotalDepartmentProductivityRowChangeEvent(((FindDesignTotalDepartmentProductivityRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveFindDesignDepartmentProductivityByDateRangeRow(FindDesignDepartmentProductivityByDateRangeRow row) {
+            public void RemoveFindDesignTotalDepartmentProductivityRow(FindDesignTotalDepartmentProductivityRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -617,7 +508,7 @@ namespace DesignProductivityDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                FindDesignDepartmentProductivityByDateRangeDataSet ds = new FindDesignDepartmentProductivityByDateRangeDataSet();
+                FindDesignTotalDepartmentProductivityDataSet ds = new FindDesignTotalDepartmentProductivityDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -635,7 +526,7 @@ namespace DesignProductivityDLL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "FindDesignDepartmentProductivityByDateRangeDataTable";
+                attribute2.FixedValue = "FindDesignTotalDepartmentProductivityDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -679,36 +570,36 @@ namespace DesignProductivityDLL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class FindDesignDepartmentProductivityByDateRangeRow : global::System.Data.DataRow {
+        public partial class FindDesignTotalDepartmentProductivityRow : global::System.Data.DataRow {
             
-            private FindDesignDepartmentProductivityByDateRangeDataTable tableFindDesignDepartmentProductivityByDateRange;
+            private FindDesignTotalDepartmentProductivityDataTable tableFindDesignTotalDepartmentProductivity;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal FindDesignDepartmentProductivityByDateRangeRow(global::System.Data.DataRowBuilder rb) : 
+            internal FindDesignTotalDepartmentProductivityRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableFindDesignDepartmentProductivityByDateRange = ((FindDesignDepartmentProductivityByDateRangeDataTable)(this.Table));
+                this.tableFindDesignTotalDepartmentProductivity = ((FindDesignTotalDepartmentProductivityDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime TransactionDate {
+            public int EmployeeID {
                 get {
-                    return ((global::System.DateTime)(this[this.tableFindDesignDepartmentProductivityByDateRange.TransactionDateColumn]));
+                    return ((int)(this[this.tableFindDesignTotalDepartmentProductivity.EmployeeIDColumn]));
                 }
                 set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.TransactionDateColumn] = value;
+                    this[this.tableFindDesignTotalDepartmentProductivity.EmployeeIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string firstname {
+            public string FirstName {
                 get {
-                    return ((string)(this[this.tableFindDesignDepartmentProductivityByDateRange.firstnameColumn]));
+                    return ((string)(this[this.tableFindDesignTotalDepartmentProductivity.FirstNameColumn]));
                 }
                 set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.firstnameColumn] = value;
+                    this[this.tableFindDesignTotalDepartmentProductivity.FirstNameColumn] = value;
                 }
             }
             
@@ -716,93 +607,10 @@ namespace DesignProductivityDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string LastName {
                 get {
-                    return ((string)(this[this.tableFindDesignDepartmentProductivityByDateRange.LastNameColumn]));
+                    return ((string)(this[this.tableFindDesignTotalDepartmentProductivity.LastNameColumn]));
                 }
                 set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.LastNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string HomeOffice {
-                get {
-                    return ((string)(this[this.tableFindDesignDepartmentProductivityByDateRange.HomeOfficeColumn]));
-                }
-                set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.HomeOfficeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string AssignedProjectID {
-                get {
-                    return ((string)(this[this.tableFindDesignDepartmentProductivityByDateRange.AssignedProjectIDColumn]));
-                }
-                set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.AssignedProjectIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string ProjectName {
-                get {
-                    return ((string)(this[this.tableFindDesignDepartmentProductivityByDateRange.ProjectNameColumn]));
-                }
-                set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.ProjectNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int OfficeID {
-                get {
-                    return ((int)(this[this.tableFindDesignDepartmentProductivityByDateRange.OfficeIDColumn]));
-                }
-                set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.OfficeIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string State {
-                get {
-                    try {
-                        return ((string)(this[this.tableFindDesignDepartmentProductivityByDateRange.StateColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'State\' in table \'FindDesignDepartmentProductivityByDateRang" +
-                                "e\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.StateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int TaskID {
-                get {
-                    return ((int)(this[this.tableFindDesignDepartmentProductivityByDateRange.TaskIDColumn]));
-                }
-                set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.TaskIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string WorkTask {
-                get {
-                    return ((string)(this[this.tableFindDesignDepartmentProductivityByDateRange.WorkTaskColumn]));
-                }
-                set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.WorkTaskColumn] = value;
+                    this[this.tableFindDesignTotalDepartmentProductivity.LastNameColumn] = value;
                 }
             }
             
@@ -810,23 +618,29 @@ namespace DesignProductivityDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public decimal TotalHours {
                 get {
-                    return ((decimal)(this[this.tableFindDesignDepartmentProductivityByDateRange.TotalHoursColumn]));
+                    try {
+                        return ((decimal)(this[this.tableFindDesignTotalDepartmentProductivity.TotalHoursColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalHours\' in table \'FindDesignTotalDepartmentProductivity" +
+                                "\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableFindDesignDepartmentProductivityByDateRange.TotalHoursColumn] = value;
+                    this[this.tableFindDesignTotalDepartmentProductivity.TotalHoursColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsStateNull() {
-                return this.IsNull(this.tableFindDesignDepartmentProductivityByDateRange.StateColumn);
+            public bool IsTotalHoursNull() {
+                return this.IsNull(this.tableFindDesignTotalDepartmentProductivity.TotalHoursColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetStateNull() {
-                this[this.tableFindDesignDepartmentProductivityByDateRange.StateColumn] = global::System.Convert.DBNull;
+            public void SetTotalHoursNull() {
+                this[this.tableFindDesignTotalDepartmentProductivity.TotalHoursColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -834,22 +648,22 @@ namespace DesignProductivityDLL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class FindDesignDepartmentProductivityByDateRangeRowChangeEvent : global::System.EventArgs {
+        public class FindDesignTotalDepartmentProductivityRowChangeEvent : global::System.EventArgs {
             
-            private FindDesignDepartmentProductivityByDateRangeRow eventRow;
+            private FindDesignTotalDepartmentProductivityRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignDepartmentProductivityByDateRangeRowChangeEvent(FindDesignDepartmentProductivityByDateRangeRow row, global::System.Data.DataRowAction action) {
+            public FindDesignTotalDepartmentProductivityRowChangeEvent(FindDesignTotalDepartmentProductivityRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignDepartmentProductivityByDateRangeRow Row {
+            public FindDesignTotalDepartmentProductivityRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -865,7 +679,7 @@ namespace DesignProductivityDLL {
         }
     }
 }
-namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataSetTableAdapters {
+namespace DesignProductivityDLL.FindDesignTotalDepartmentProductivityDataSetTableAdapters {
     
     
     /// <summary>
@@ -877,7 +691,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class FindDesignDepartmentProductivityByDateRangeTableAdapter : global::System.ComponentModel.Component {
+    public partial class FindDesignTotalDepartmentProductivityTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -891,7 +705,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public FindDesignDepartmentProductivityByDateRangeTableAdapter() {
+        public FindDesignTotalDepartmentProductivityTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -988,17 +802,10 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "FindDesignDepartmentProductivityByDateRange";
-            tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
-            tableMapping.ColumnMappings.Add("firstname", "firstname");
+            tableMapping.DataSetTable = "FindDesignTotalDepartmentProductivity";
+            tableMapping.ColumnMappings.Add("EmployeeID", "EmployeeID");
+            tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
-            tableMapping.ColumnMappings.Add("HomeOffice", "HomeOffice");
-            tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
-            tableMapping.ColumnMappings.Add("ProjectName", "ProjectName");
-            tableMapping.ColumnMappings.Add("OfficeID", "OfficeID");
-            tableMapping.ColumnMappings.Add("State", "State");
-            tableMapping.ColumnMappings.Add("TaskID", "TaskID");
-            tableMapping.ColumnMappings.Add("WorkTask", "WorkTask");
             tableMapping.ColumnMappings.Add("TotalHours", "TotalHours");
             this._adapter.TableMappings.Add(tableMapping);
         }
@@ -1016,7 +823,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.FindDesignDepartmentProductivityByDateRange";
+            this._commandCollection[0].CommandText = "dbo.FindDesignTotalDepartmentProductivity";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1027,7 +834,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(FindDesignDepartmentProductivityByDateRangeDataSet.FindDesignDepartmentProductivityByDateRangeDataTable dataTable, global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate) {
+        public virtual int Fill(FindDesignTotalDepartmentProductivityDataSet.FindDesignTotalDepartmentProductivityDataTable dataTable, global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((StartDate.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(StartDate.Value));
@@ -1052,7 +859,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FindDesignDepartmentProductivityByDateRangeDataSet.FindDesignDepartmentProductivityByDateRangeDataTable GetData(global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate) {
+        public virtual FindDesignTotalDepartmentProductivityDataSet.FindDesignTotalDepartmentProductivityDataTable GetData(global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((StartDate.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(StartDate.Value));
@@ -1066,7 +873,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            FindDesignDepartmentProductivityByDateRangeDataSet.FindDesignDepartmentProductivityByDateRangeDataTable dataTable = new FindDesignDepartmentProductivityByDateRangeDataSet.FindDesignDepartmentProductivityByDateRangeDataTable();
+            FindDesignTotalDepartmentProductivityDataSet.FindDesignTotalDepartmentProductivityDataTable dataTable = new FindDesignTotalDepartmentProductivityDataSet.FindDesignTotalDepartmentProductivityDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1140,7 +947,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(FindDesignDepartmentProductivityByDateRangeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(FindDesignTotalDepartmentProductivityDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1150,7 +957,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(FindDesignDepartmentProductivityByDateRangeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(FindDesignTotalDepartmentProductivityDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1160,7 +967,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(FindDesignDepartmentProductivityByDateRangeDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(FindDesignTotalDepartmentProductivityDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1194,7 +1001,7 @@ namespace DesignProductivityDLL.FindDesignDepartmentProductivityByDateRangeDataS
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(FindDesignDepartmentProductivityByDateRangeDataSet dataSet) {
+        public virtual int UpdateAll(FindDesignTotalDepartmentProductivityDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
