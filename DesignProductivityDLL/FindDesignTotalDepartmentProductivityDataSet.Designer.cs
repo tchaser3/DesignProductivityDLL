@@ -287,6 +287,8 @@ namespace DesignProductivityDLL {
             
             private global::System.Data.DataColumn columnTotalHours;
             
+            private global::System.Data.DataColumn columnHomeOffice;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FindDesignTotalDepartmentProductivityDataTable() {
@@ -354,6 +356,14 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn HomeOfficeColumn {
+                get {
+                    return this.columnHomeOffice;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -389,13 +399,14 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignTotalDepartmentProductivityRow AddFindDesignTotalDepartmentProductivityRow(int EmployeeID, string FirstName, string LastName, decimal TotalHours) {
+            public FindDesignTotalDepartmentProductivityRow AddFindDesignTotalDepartmentProductivityRow(int EmployeeID, string FirstName, string LastName, decimal TotalHours, string HomeOffice) {
                 FindDesignTotalDepartmentProductivityRow rowFindDesignTotalDepartmentProductivityRow = ((FindDesignTotalDepartmentProductivityRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         EmployeeID,
                         FirstName,
                         LastName,
-                        TotalHours};
+                        TotalHours,
+                        HomeOffice};
                 rowFindDesignTotalDepartmentProductivityRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFindDesignTotalDepartmentProductivityRow);
                 return rowFindDesignTotalDepartmentProductivityRow;
@@ -422,6 +433,7 @@ namespace DesignProductivityDLL {
                 this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
                 this.columnTotalHours = base.Columns["TotalHours"];
+                this.columnHomeOffice = base.Columns["HomeOffice"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -435,12 +447,16 @@ namespace DesignProductivityDLL {
                 base.Columns.Add(this.columnLastName);
                 this.columnTotalHours = new global::System.Data.DataColumn("TotalHours", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotalHours);
+                this.columnHomeOffice = new global::System.Data.DataColumn("HomeOffice", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHomeOffice);
                 this.columnEmployeeID.AllowDBNull = false;
                 this.columnFirstName.AllowDBNull = false;
                 this.columnFirstName.MaxLength = 2147483647;
                 this.columnLastName.AllowDBNull = false;
                 this.columnLastName.MaxLength = 2147483647;
                 this.columnTotalHours.ReadOnly = true;
+                this.columnHomeOffice.AllowDBNull = false;
+                this.columnHomeOffice.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -633,6 +649,17 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string HomeOffice {
+                get {
+                    return ((string)(this[this.tableFindDesignTotalDepartmentProductivity.HomeOfficeColumn]));
+                }
+                set {
+                    this[this.tableFindDesignTotalDepartmentProductivity.HomeOfficeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsTotalHoursNull() {
                 return this.IsNull(this.tableFindDesignTotalDepartmentProductivity.TotalHoursColumn);
             }
@@ -807,6 +834,7 @@ namespace DesignProductivityDLL.FindDesignTotalDepartmentProductivityDataSetTabl
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
             tableMapping.ColumnMappings.Add("TotalHours", "TotalHours");
+            tableMapping.ColumnMappings.Add("HomeOffice", "HomeOffice");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

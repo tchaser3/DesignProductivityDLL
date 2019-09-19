@@ -27,6 +27,7 @@
               <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
               <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
               <Mapping SourceColumn="TotalHours" DataSetColumn="TotalHours" />
+              <Mapping SourceColumn="HomeOffice" DataSetColumn="HomeOffice" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -38,7 +39,7 @@
   <xs:element name="FindDesignTotalDepartmentProductivityDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindDesignTotalDepartmentProductivityDataSet" msprop:Generator_UserDSName="FindDesignTotalDepartmentProductivityDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FindDesignTotalDepartmentProductivity" msprop:Generator_TableClassName="FindDesignTotalDepartmentProductivityDataTable" msprop:Generator_TableVarName="tableFindDesignTotalDepartmentProductivity" msprop:Generator_TablePropName="FindDesignTotalDepartmentProductivity" msprop:Generator_RowDeletingName="FindDesignTotalDepartmentProductivityRowDeleting" msprop:Generator_RowChangingName="FindDesignTotalDepartmentProductivityRowChanging" msprop:Generator_RowEvHandlerName="FindDesignTotalDepartmentProductivityRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDesignTotalDepartmentProductivityRowDeleted" msprop:Generator_UserTableName="FindDesignTotalDepartmentProductivity" msprop:Generator_RowChangedName="FindDesignTotalDepartmentProductivityRowChanged" msprop:Generator_RowEvArgName="FindDesignTotalDepartmentProductivityRowChangeEvent" msprop:Generator_RowClassName="FindDesignTotalDepartmentProductivityRow">
+        <xs:element name="FindDesignTotalDepartmentProductivity" msprop:Generator_TableClassName="FindDesignTotalDepartmentProductivityDataTable" msprop:Generator_TableVarName="tableFindDesignTotalDepartmentProductivity" msprop:Generator_RowChangedName="FindDesignTotalDepartmentProductivityRowChanged" msprop:Generator_TablePropName="FindDesignTotalDepartmentProductivity" msprop:Generator_RowDeletingName="FindDesignTotalDepartmentProductivityRowDeleting" msprop:Generator_RowChangingName="FindDesignTotalDepartmentProductivityRowChanging" msprop:Generator_RowEvHandlerName="FindDesignTotalDepartmentProductivityRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDesignTotalDepartmentProductivityRowDeleted" msprop:Generator_RowClassName="FindDesignTotalDepartmentProductivityRow" msprop:Generator_UserTableName="FindDesignTotalDepartmentProductivity" msprop:Generator_RowEvArgName="FindDesignTotalDepartmentProductivityRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" />
@@ -57,6 +58,13 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="TotalHours" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalHours" msprop:Generator_ColumnPropNameInRow="TotalHours" msprop:Generator_ColumnPropNameInTable="TotalHoursColumn" msprop:Generator_UserColumnName="TotalHours" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HomeOffice" msprop:Generator_ColumnVarNameInTable="columnHomeOffice" msprop:Generator_ColumnPropNameInRow="HomeOffice" msprop:Generator_ColumnPropNameInTable="HomeOfficeColumn" msprop:Generator_UserColumnName="HomeOffice">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
