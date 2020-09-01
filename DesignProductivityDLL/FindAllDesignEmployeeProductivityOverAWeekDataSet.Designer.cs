@@ -283,13 +283,17 @@ namespace DesignProductivityDLL {
             
             private global::System.Data.DataColumn columnTransactionDate;
             
-            private global::System.Data.DataColumn columnAssignedProjectID;
-            
-            private global::System.Data.DataColumn columnProjectName;
+            private global::System.Data.DataColumn columnEmployeeID;
             
             private global::System.Data.DataColumn columnFirstName;
             
             private global::System.Data.DataColumn columnLastName;
+            
+            private global::System.Data.DataColumn columnProjectID;
+            
+            private global::System.Data.DataColumn columnAssignedProjectID;
+            
+            private global::System.Data.DataColumn columnProjectName;
             
             private global::System.Data.DataColumn columnPayRate;
             
@@ -346,17 +350,9 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn AssignedProjectIDColumn {
+            public global::System.Data.DataColumn EmployeeIDColumn {
                 get {
-                    return this.columnAssignedProjectID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ProjectNameColumn {
-                get {
-                    return this.columnProjectName;
+                    return this.columnEmployeeID;
                 }
             }
             
@@ -373,6 +369,30 @@ namespace DesignProductivityDLL {
             public global::System.Data.DataColumn LastNameColumn {
                 get {
                     return this.columnLastName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ProjectIDColumn {
+                get {
+                    return this.columnProjectID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn AssignedProjectIDColumn {
+                get {
+                    return this.columnAssignedProjectID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ProjectNameColumn {
+                get {
+                    return this.columnProjectName;
                 }
             }
             
@@ -429,15 +449,17 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindAllDesignEmployeeProductivityOverAWeekRow AddFindAllDesignEmployeeProductivityOverAWeekRow(System.DateTime TransactionDate, string AssignedProjectID, string ProjectName, string FirstName, string LastName, decimal PayRate, decimal TotalHours) {
+            public FindAllDesignEmployeeProductivityOverAWeekRow AddFindAllDesignEmployeeProductivityOverAWeekRow(System.DateTime TransactionDate, int EmployeeID, string FirstName, string LastName, int ProjectID, string AssignedProjectID, string ProjectName, decimal PayRate, decimal TotalHours) {
                 FindAllDesignEmployeeProductivityOverAWeekRow rowFindAllDesignEmployeeProductivityOverAWeekRow = ((FindAllDesignEmployeeProductivityOverAWeekRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         TransactionDate,
-                        AssignedProjectID,
-                        ProjectName,
+                        EmployeeID,
                         FirstName,
                         LastName,
+                        ProjectID,
+                        AssignedProjectID,
+                        ProjectName,
                         PayRate,
                         TotalHours};
                 rowFindAllDesignEmployeeProductivityOverAWeekRow.ItemArray = columnValuesArray;
@@ -471,10 +493,12 @@ namespace DesignProductivityDLL {
             internal void InitVars() {
                 this.columnTransactionID = base.Columns["TransactionID"];
                 this.columnTransactionDate = base.Columns["TransactionDate"];
-                this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
-                this.columnProjectName = base.Columns["ProjectName"];
+                this.columnEmployeeID = base.Columns["EmployeeID"];
                 this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
+                this.columnProjectID = base.Columns["ProjectID"];
+                this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
+                this.columnProjectName = base.Columns["ProjectName"];
                 this.columnPayRate = base.Columns["PayRate"];
                 this.columnTotalHours = base.Columns["TotalHours"];
             }
@@ -486,14 +510,18 @@ namespace DesignProductivityDLL {
                 base.Columns.Add(this.columnTransactionID);
                 this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransactionDate);
-                this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAssignedProjectID);
-                this.columnProjectName = new global::System.Data.DataColumn("ProjectName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProjectName);
+                this.columnEmployeeID = new global::System.Data.DataColumn("EmployeeID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmployeeID);
                 this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFirstName);
                 this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLastName);
+                this.columnProjectID = new global::System.Data.DataColumn("ProjectID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProjectID);
+                this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAssignedProjectID);
+                this.columnProjectName = new global::System.Data.DataColumn("ProjectName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProjectName);
                 this.columnPayRate = new global::System.Data.DataColumn("PayRate", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPayRate);
                 this.columnTotalHours = new global::System.Data.DataColumn("TotalHours", typeof(decimal), null, global::System.Data.MappingType.Element);
@@ -505,14 +533,16 @@ namespace DesignProductivityDLL {
                 this.columnTransactionID.ReadOnly = true;
                 this.columnTransactionID.Unique = true;
                 this.columnTransactionDate.AllowDBNull = false;
-                this.columnAssignedProjectID.AllowDBNull = false;
-                this.columnAssignedProjectID.MaxLength = 2147483647;
-                this.columnProjectName.AllowDBNull = false;
-                this.columnProjectName.MaxLength = 2147483647;
+                this.columnEmployeeID.AllowDBNull = false;
                 this.columnFirstName.AllowDBNull = false;
                 this.columnFirstName.MaxLength = 2147483647;
                 this.columnLastName.AllowDBNull = false;
                 this.columnLastName.MaxLength = 2147483647;
+                this.columnProjectID.AllowDBNull = false;
+                this.columnAssignedProjectID.AllowDBNull = false;
+                this.columnAssignedProjectID.MaxLength = 2147483647;
+                this.columnProjectName.AllowDBNull = false;
+                this.columnProjectName.MaxLength = 2147483647;
                 this.columnPayRate.AllowDBNull = false;
                 this.columnTotalHours.AllowDBNull = false;
             }
@@ -679,23 +709,12 @@ namespace DesignProductivityDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string AssignedProjectID {
+            public int EmployeeID {
                 get {
-                    return ((string)(this[this.tableFindAllDesignEmployeeProductivityOverAWeek.AssignedProjectIDColumn]));
+                    return ((int)(this[this.tableFindAllDesignEmployeeProductivityOverAWeek.EmployeeIDColumn]));
                 }
                 set {
-                    this[this.tableFindAllDesignEmployeeProductivityOverAWeek.AssignedProjectIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string ProjectName {
-                get {
-                    return ((string)(this[this.tableFindAllDesignEmployeeProductivityOverAWeek.ProjectNameColumn]));
-                }
-                set {
-                    this[this.tableFindAllDesignEmployeeProductivityOverAWeek.ProjectNameColumn] = value;
+                    this[this.tableFindAllDesignEmployeeProductivityOverAWeek.EmployeeIDColumn] = value;
                 }
             }
             
@@ -718,6 +737,39 @@ namespace DesignProductivityDLL {
                 }
                 set {
                     this[this.tableFindAllDesignEmployeeProductivityOverAWeek.LastNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ProjectID {
+                get {
+                    return ((int)(this[this.tableFindAllDesignEmployeeProductivityOverAWeek.ProjectIDColumn]));
+                }
+                set {
+                    this[this.tableFindAllDesignEmployeeProductivityOverAWeek.ProjectIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string AssignedProjectID {
+                get {
+                    return ((string)(this[this.tableFindAllDesignEmployeeProductivityOverAWeek.AssignedProjectIDColumn]));
+                }
+                set {
+                    this[this.tableFindAllDesignEmployeeProductivityOverAWeek.AssignedProjectIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ProjectName {
+                get {
+                    return ((string)(this[this.tableFindAllDesignEmployeeProductivityOverAWeek.ProjectNameColumn]));
+                }
+                set {
+                    this[this.tableFindAllDesignEmployeeProductivityOverAWeek.ProjectNameColumn] = value;
                 }
             }
             
@@ -905,10 +957,12 @@ namespace DesignProductivityDLL.FindAllDesignEmployeeProductivityOverAWeekDataSe
             tableMapping.DataSetTable = "FindAllDesignEmployeeProductivityOverAWeek";
             tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
             tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
-            tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
-            tableMapping.ColumnMappings.Add("ProjectName", "ProjectName");
+            tableMapping.ColumnMappings.Add("EmployeeID", "EmployeeID");
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
+            tableMapping.ColumnMappings.Add("ProjectID", "ProjectID");
+            tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
+            tableMapping.ColumnMappings.Add("ProjectName", "ProjectName");
             tableMapping.ColumnMappings.Add("PayRate", "PayRate");
             tableMapping.ColumnMappings.Add("TotalHours", "TotalHours");
             this._adapter.TableMappings.Add(tableMapping);
