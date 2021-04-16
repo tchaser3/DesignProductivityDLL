@@ -70,6 +70,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindDesignEmployeeTotalHoursDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindDesignProductivityForVoidingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignProductivityForVoidingDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindDesignTotalDepartmentProductivityDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,6 +95,11 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="VoidDesignProductivityEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VoidDesignProductivityEntry.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +159,17 @@
     <None Include="FindDesignEmployeeTotalHoursDataSet.xss">
       <DependentUpon>FindDesignEmployeeTotalHoursDataSet.xsd</DependentUpon>
     </None>
+    <None Include="FindDesignProductivityForVoidingDataSet.xsc">
+      <DependentUpon>FindDesignProductivityForVoidingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProductivityForVoidingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignProductivityForVoidingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignProductivityForVoidingDataSet.xss">
+      <DependentUpon>FindDesignProductivityForVoidingDataSet.xsd</DependentUpon>
+    </None>
     <None Include="FindDesignTotalDepartmentProductivityDataSet.xsc">
       <DependentUpon>FindDesignTotalDepartmentProductivityDataSet.xsd</DependentUpon>
     </None>
@@ -185,6 +206,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="VoidDesignProductivityEntry.xsc">
+      <DependentUpon>VoidDesignProductivityEntry.xsd</DependentUpon>
+    </None>
+    <None Include="VoidDesignProductivityEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VoidDesignProductivityEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VoidDesignProductivityEntry.xss">
+      <DependentUpon>VoidDesignProductivityEntry.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

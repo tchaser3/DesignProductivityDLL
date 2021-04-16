@@ -40,6 +40,42 @@ namespace DesignProductivityDLL
         FindAllDesignEmployeeProductivityOverAWeekDataSet aFindAllDesignEmployeeProductivityOverAWeekDataSet;
         FindAllDesignEmployeeProductivityOverAWeekDataSetTableAdapters.FindAllDesignEmployeeProductivityOverAWeekTableAdapter aFindAllDesignEmployeeProductivityOverAWeekTableAdapter;
 
+        FindDesignProductivityForVoidingDataSet aFindDesignProductivityForVoidingDataSet;
+        FindDesignProductivityForVoidingDataSetTableAdapters.FindDesignProductivityForVoidingTableAdapter aFindDesignProductivityForVoidingTableAdapter;
+
+        VoidDesignProductivityEntryTableAdapters.QueriesTableAdapter aVoidDesignProductivityTableAdapter;
+
+        public bool VoidDesignProductivity(int intTransactionID)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aVoidDesignProductivityTableAdapter = new VoidDesignProductivityEntryTableAdapters.QueriesTableAdapter();
+                aVoidDesignProductivityTableAdapter.VoidDesignProductivity(intTransactionID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Design Productivity Class // Void Design Productivity " + Ex.Message);
+            }
+
+            return blnFatalError;
+        }
+        public FindDesignProductivityForVoidingDataSet FindDesignProducitivityForVoiding(int intEmployeeID, string strAssignedProjectID, DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindDesignProductivityForVoidingDataSet = new FindDesignProductivityForVoidingDataSet();
+                aFindDesignProductivityForVoidingTableAdapter = new FindDesignProductivityForVoidingDataSetTableAdapters.FindDesignProductivityForVoidingTableAdapter();
+                aFindDesignProductivityForVoidingTableAdapter.Fill(aFindDesignProductivityForVoidingDataSet.FindDesignProductivityForVoiding, intEmployeeID, strAssignedProjectID, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Design Productivity Class // Find Design Productivity For Voiding " + Ex.Message);
+            }
+
+            return aFindDesignProductivityForVoidingDataSet;
+        }
         public FindAllDesignEmployeeProductivityOverAWeekDataSet FindAllDesignEmployeeProductivityOverAWeek(DateTime datStartDate, DateTime datEndDate)
         {
             try
